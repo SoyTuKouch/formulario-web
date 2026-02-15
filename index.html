@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de ejemplo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de contacto</h1>
+
+  <form action="AQUI_VA_TU_ENDPOINT_DE_FORMSPREE" method="POST">
+    <label>Nombre completo</label>
+    <input type="text" name="nombre" required>
+
+    <label>Correo electrónico</label>
+    <input type="email" name="correo" required>
+
+    <label>Mensaje</label>
+    <textarea name="mensaje" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
